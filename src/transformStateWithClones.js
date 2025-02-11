@@ -29,7 +29,6 @@ function transformStateWithClones(state, actions) {
       default:
         throw new Error(`Unknown action type: ${action.type}`);
     }
-
     arrStates.push({ ...stateCopy });
   }
 
